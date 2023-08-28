@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+} */
+
+
+/* Custom css here */
+
+/* TEST */
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #AB907D;
+}
+
+button {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+.rightbutton {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  font-size: 75px;
+  padding-top: 50px;
+  right: 10%;
+}
+
+.leftbutton {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  left: 10%;
+  padding-top: 50px;
+  z-index: 5;
+}
+
+main,
+body,
+html,
+#root {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+#root,
+.feedContainer,
+.topContainer {
+  height: 100%;
+  font-family: Rockwell;
+  color: black;
+}
+
+.main {
+  margin-top: 50px;
+  height: 80%;
+}
+
+.tabContainer {
+  position: relative;
+  background-color: #DFD5D0;
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  border-radius: 0px 10px 10px 10px;
+  overflow-y: auto;
+
+}
+
+.tabHeaderContainer {
+
+  overflow: hidden;
+
+  margin-left: 5%;
+  border-radius: 2px;
+}
+
+.tabheader {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabheader .inactive {
+  background-color: #836551;
+  width: 300px;
+  float: left;
+  width: 3;
+  border-right: solid #AB907D 5px;
+  color: #DFD5D0;
+}
+
+.tabheader .inactive:hover {
+  background-color: #452B14;
+  cursor: pointer;
+}
+
+.tabheader .active {
+  background-color: #DFD5D0;
+  width: 300px;
+  float: left;
+  width: 3;
+  border-right: solid #AB907D 5px;
+  color: #452B14;
+}
+
+.tabheader li>div {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+}
+
+.navbar {
+  background-color: #452B14;
+  color: rgb(127, 114, 114);
+  position: absolute;
+  width: 99%;
+  top: 0.6%;
+  text-align: center;
+  z-index: 2;
+  left: 0.3%;
+}
+
+.title {
+  position: relative;
+
+}
+
+.hamDiv {
+  top: 0;
+  position: absolute;
+  right: 5px;
+  z-index: 3;
+}
+
+.ham {
+  position: relative;
+}
+
+.logoDiv {
+  position: absolute;
+  display: block;
+  left: 5px;
+  z-index: 2;
+}
+
+
+/* Row css */
+.rowContainer {
+  overflow-x: hidden;
+  height: 33%;
+  overflow-y: hidden;
+  white-space: nowrap;
+  text-align: center;
+
+}
+
+/* Atom css */
+.bookContainer {
+  padding-bottom: 20px;
+  display: inline-block;
+  margin: 10px;
+  height: 80%;
+  width: 10%;
+  position: relative;
+
+}
+
+.bookContainer .img {
+  border: 2px solid white;
+  border-radius: 2px;
+  height: 100%;
+  width: 100%;
+}
+
+.row {
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+
+}
+
+.hoverInfo {
+  position: fixed;
+  background-color: white;
+
+  z-index: 5;
+  padding: 10px;
+  text-align: left;
+  width: 500px;
+  white-space: normal;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.reactionContainer {
+  display: inline-block;
+  width: 10%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.reactionContainer button {
+  width: 90%;
+  display: block;
+  position: relative;
+  height: 20px;
+  font-size: 8px;
+}
+
+svg:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.rightbutton:hover,
+.leftbutton:hover {
+  cursor: pointer;
+}
+
+.infoContainer {
+  display: inline-block;
+  width: 90%;
+  height: 100%;
+
+}
+
+#happyFace:hover,
+#sadFace:hover {
+  cursor: pointer;
+}
